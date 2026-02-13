@@ -14,15 +14,18 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
 ## 📦 Plugin Highlights
 
 ### AI & Completion
+
 - [**avante.nvim**](https://github.com/yetone/avante.nvim) - AI-powered code assistant with Copilot integration
 - [**copilot.lua**](https://github.com/zbirenbaum/copilot.lua) - GitHub Copilot support
 - [**blink.cmp**](https://github.com/saghen/blink.cmp) - Fast completion engine with multiple sources
 
 ### Navigation & Search
+
 - [**harpoon**](https://github.com/ThePrimeagen/harpoon) - Quick file navigation (branch: harpoon2)
 - [**snacks.nvim**](https://github.com/folke/snacks.nvim) - Fuzzy finder, file explorer, git integration, terminal
 
 ### LSP & Development
+
 - **nvim-lspconfig** - Pre-configured LSP servers:
   - Python: `pyright`, `ruff`
   - TypeScript/JavaScript: `vtsls`
@@ -34,6 +37,7 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
   - And more...
 
 ### Formatting & Linting
+
 - [**conform.nvim**](https://github.com/stevearc/conform.nvim) - Code formatting with:
   - Lua: `stylua`
   - Go: `gofmt`
@@ -43,10 +47,12 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
   - Markdown: `prettier`, `markdownlint-cli2`
 
 ### Syntax & Editing
+
 - [**nvim-treesitter**](https://github.com/nvim-treesitter/nvim-treesitter) - Advanced syntax highlighting
 - [**nvim-ts-autotag**](https://github.com/windwp/nvim-ts-autotag) - Auto close/rename HTML tags
 
 ### Colorschemes
+
 - [**tokyonight.nvim**](https://github.com/folke/tokyonight.nvim) (default)
 - [**rose-pine**](https://github.com/rose-pine/neovim)
 - [**gruvbox.nvim**](https://github.com/ellisonleao/gruvbox.nvim)
@@ -54,94 +60,103 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
 ## ⌨️ Key Bindings
 
 ### General
-| Key | Description |
-|-----|-------------|
-| `<Space>` | Leader key |
-| `<Tab>` | Next window |
-| `<S-Tab>` | Previous window |
+
+| Key          | Description           |
+| ------------ | --------------------- |
+| `<Space>`    | Leader key            |
+| `<Tab>`      | Next window           |
+| `<S-Tab>`    | Previous window       |
 | `<leader>fd` | File explorer (netrw) |
-| `<Esc><Esc>` | Exit terminal mode |
+| `<Esc><Esc>` | Exit terminal mode    |
 
 ### Navigation & Scrolling
-| Key | Description |
-|-----|-------------|
-| `<C-d>` | Scroll down and center |
-| `<C-u>` | Scroll up and center |
-| `n` / `N` | Next/Previous search result (centered) |
-| `<C-k>` / `<C-j>` | Next/Previous quickfix item |
-| `<leader>k` / `<leader>j` | Next/Previous location list item |
+
+| Key                       | Description                            |
+| ------------------------- | -------------------------------------- |
+| `<C-d>`                   | Scroll down and center                 |
+| `<C-u>`                   | Scroll up and center                   |
+| `n` / `N`                 | Next/Previous search result (centered) |
+| `<C-k>` / `<C-j>`         | Next/Previous quickfix item            |
+| `<leader>k` / `<leader>j` | Next/Previous location list item       |
 
 ### Harpoon
-| Key | Description |
-|-----|-------------|
-| `<leader>ha` | Add file to harpoon |
-| `<leader>hp` | Prepend file to harpoon |
-| `<leader>hm` | Toggle harpoon quick menu |
-| `<leader>1-9` | Jump to harpoon file 1-9 |
+
+| Key           | Description               |
+| ------------- | ------------------------- |
+| `<leader>ha`  | Add file to harpoon       |
+| `<leader>hp`  | Prepend file to harpoon   |
+| `<leader>hm`  | Toggle harpoon quick menu |
+| `<leader>1-9` | Jump to harpoon file 1-9  |
 
 ### Snacks Picker & Explorer
-| Key | Description |
-|-----|-------------|
-| `<leader>e` | File Explorer |
-| `<leader>/` | Grep (search in files) |
-| `<leader>ff` | Find files |
-| `<leader>fb` | Find buffers |
-| `<leader>fc` | Find config files |
-| `<leader>fg` | Find git files |
-| `<leader>fr` | Recent files |
-| `<leader>fp` | Projects |
+
+| Key          | Description            |
+| ------------ | ---------------------- |
+| `<leader>e`  | File Explorer          |
+| `<leader>/`  | Grep (search in files) |
+| `<leader>fb` | Find buffers           |
+| `<leader>fc` | Find config files      |
+| `<leader>fg` | Find git files         |
+| `<leader>fr` | Recent files           |
+| `<leader>fp` | Projects               |
 
 ### Git (Snacks)
-| Key | Description |
-|-----|-------------|
-| `<leader>gg` | Lazygit |
+
+| Key          | Description  |
+| ------------ | ------------ |
+| `<leader>gg` | Lazygit      |
 | `<leader>gb` | Git branches |
-| `<leader>gl` | Git log |
-| `<leader>gs` | Git status |
-| `<leader>gd` | Git diff |
+| `<leader>gl` | Git log      |
+| `<leader>gs` | Git status   |
+| `<leader>gd` | Git diff     |
 | `<leader>gf` | Git file log |
 
 ### LSP
-| Key | Description |
-|-----|-------------|
-| `gd` | Go to definition |
-| `gD` | Go to declaration |
-| `gr` | References |
-| `gI` | Go to implementation |
-| `<leader>zig` | Restart LSP |
+
+| Key           | Description          |
+| ------------- | -------------------- |
+| `gd`          | Go to definition     |
+| `gD`          | Go to declaration    |
+| `gr`          | References           |
+| `gI`          | Go to implementation |
+| `<leader>zig` | Restart LSP          |
 
 ### AI (Avante)
-| Key | Description |
-|-----|-------------|
-| `<leader>aa` | Ask Avante |
-| `<leader>ac` | Chat with Avante |
-| `<leader>ae` | Edit with Avante |
-| `<leader>at` | Toggle Avante |
-| `<leader>am` | Select Avante model |
+
+| Key          | Description            |
+| ------------ | ---------------------- |
+| `<leader>aa` | Ask Avante             |
+| `<leader>ac` | Chat with Avante       |
+| `<leader>ae` | Edit with Avante       |
+| `<leader>at` | Toggle Avante          |
+| `<leader>am` | Select Avante model    |
 | `<leader>ap` | Switch Avante provider |
 
 ### Editing
-| Key | Description |
-|-----|-------------|
-| `J` / `K` (visual) | Move selection down/up |
+
+| Key                  | Description                          |
+| -------------------- | ------------------------------------ |
+| `J` / `K` (visual)   | Move selection down/up               |
 | `<leader>p` (visual) | Paste over selection without yanking |
-| `<leader>y` | Yank to system clipboard |
-| `<leader>Y` | Yank line to system clipboard |
-| `<leader>d` | Delete to void register |
-| `<leader>s` | Substitute word under cursor |
+| `<leader>y`          | Yank to system clipboard             |
+| `<leader>Y`          | Yank line to system clipboard        |
+| `<leader>d`          | Delete to void register              |
+| `<leader>s`          | Substitute word under cursor         |
 
 ### Misc
-| Key | Description |
-|-----|-------------|
-| `<C-p>` | Toggle terminal |
-| `<leader>u` | Undo history |
-| `<leader>um` | Toggle render markdown |
-| `<leader>cp` | Markdown preview toggle |
+
+| Key          | Description              |
+| ------------ | ------------------------ |
+| `<C-p>`      | Toggle terminal          |
+| `<leader>u`  | Undo history             |
+| `<leader>um` | Toggle render markdown   |
+| `<leader>cp` | Markdown preview toggle  |
 | `<leader>cv` | Select Python VirtualEnv |
 
 ## 🛠️ Installation
 
 ### Prerequisites
+
 - Neovim >= 0.9.0
 - Git
 - A [Nerd Font](https://www.nerdfonts.com/) (for icons)
@@ -151,6 +166,7 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
 ### Steps
 
 1. **Backup your existing config** (if any):
+
    ```bash
    mv ~/.config/nvim ~/.config/nvim.bak
    mv ~/.local/share/nvim ~/.local/share/nvim.bak
@@ -159,14 +175,17 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
    ```
 
 2. **Clone this repository**:
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/nvim ~/.config/nvim
    ```
 
 3. **Start Neovim**:
+
    ```bash
    nvim
    ```
+
    Lazy.nvim will automatically bootstrap and install all plugins on first launch.
 
 4. **Authenticate Copilot** (optional):
