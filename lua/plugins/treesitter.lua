@@ -1,0 +1,49 @@
+return {
+  "nvim-treesitter/nvim-treesitter",
+  opts = {
+    -- LazyVim config for treesitter
+    indent = { enable = true }, ---@type lazyvim.TSFeat
+    highlight = { enable = true }, ---@type lazyvim.TSFeat
+    folds = { enable = true }, ---@type lazyvim.TSFeat
+    ensure_installed = {
+      "bash",
+      "dockerfile",
+      "diff",
+      "hcl",
+      "helm",
+      "html",
+      "javascript",
+      "jsdoc",
+      "json",
+      "jsonc",
+      "go",
+      "gomod",
+      "gowork",
+      "gosum",
+      "lua",
+      "luadoc",
+      "luap",
+      "markdown",
+      "markdown_inline",
+      "ninja",
+      "printf",
+      "python",
+      "query",
+      "regex",
+      "rst",
+      "terraform",
+      "toml",
+      "tsx",
+      "typescript",
+      "vim",
+      "vimdoc",
+      "xml",
+      "yaml",
+    },
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    event = "LazyFile",
+    opts = {},
+  },
+}

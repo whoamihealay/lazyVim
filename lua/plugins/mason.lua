@@ -1,0 +1,50 @@
+return {
+  {
+    "mason-org/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "ansible-lint",
+        "delve",
+        "hadolint",
+        "impl",
+        "js-debug-adapter",
+        "goimports",
+        "golangci-lint",
+        "gofumpt",
+        "gomodifytags",
+        "markdownlint-cli2",
+        "markdown-toc",
+        "prettier",
+        "tflint",
+        "stylua",
+      },
+    },
+  },
+  {
+    "mason-org/mason-lspconfig.nvim",
+    dependencies = {
+      "mason-org/mason.nvim",
+      "neovim/nvim-lspconfig",
+    },
+    opts = {
+      ensure_installed = {
+        "ansiblels",
+        "azure_pipelines_ls",
+        "basedpyright",
+        "dockerls",
+        "docker_compose_language_service",
+        "helm_ls",
+        "jsonls",
+        "lua_ls",
+        "pyright",
+        "ruff",
+        "tailwindcss",
+        "terraformls",
+        "tflint",
+        "vtsls",
+        "vimls",
+        "yamlls",
+      },
+    },
+  },
+}
