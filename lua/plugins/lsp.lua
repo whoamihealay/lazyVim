@@ -22,6 +22,7 @@ return {
           },
         },
         helm_ls = {},
+        graphql = {},
         marksman = {},
         ruff = {
           cmd_env = { RUFF_TRACE = "messages" },
