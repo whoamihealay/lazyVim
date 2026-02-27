@@ -6,7 +6,6 @@ vim.g.mapleader = " "
 vim.keymap.maplocalleader = "\\"
 
 -- Open file explorer
-vim.keymap.set("n", "<leader>fd", vim.cmd.Ex, { desc = "File explorer" })
 vim.keymap.set("n", "<Tab>", "<C-w>w", { desc = "Next window" })
 vim.keymap.set("n", "<S-Tab>", "<C-w>W", { desc = "Previous window" })
 
@@ -47,13 +46,6 @@ vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz", { desc = "Previous quickfix ite
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz", { desc = "Next location list item" })
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", { desc = "Previous location list item" })
 
--- Substitute word under cursor throughout the file
-vim.keymap.set(
-  "n",
-  "<leader>s",
-  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-  { desc = "Substitute word under cursor" }
-)
 -- Delete word under cursor
 vim.keymap.set("i", "<C-bs>", "<C-w>", { desc = "Delete word before cursor" })
 
