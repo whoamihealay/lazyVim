@@ -6,6 +6,7 @@ vim.g.mapleader = " "
 vim.keymap.maplocalleader = "\\"
 
 -- Open file explorer
+vim.keymap.set("n", "<leader>fd", vim.cmd.Ex, { desc = "File explorer" })
 vim.keymap.set("n", "<Tab>", "<C-w>w", { desc = "Next window" })
 vim.keymap.set("n", "<S-Tab>", "<C-w>W", { desc = "Previous window" })
 
