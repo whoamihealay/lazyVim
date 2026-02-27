@@ -5,7 +5,7 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
 ## ✨ Features
 
 - **LazyVim Base** - Modern Neovim distribution with sensible defaults and lazy-loading
-- **AI-Powered Coding** - Integrated Copilot and Avante for AI assistance
+- **AI-Powered Coding** - Integrated Copilot for AI assistance
 - **Multi-Language Support** - LSP configurations for Python, TypeScript, Go, Terraform, YAML, and more
 - **Beautiful UI** - Multiple colorscheme options (Tokyo Night, Rose Pine, Gruvbox)
 - **Fast Navigation** - Harpoon for quick file switching, Snacks.nvim for fuzzy finding
@@ -15,7 +15,6 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
 
 ### AI & Completion
 
-- [**avante.nvim**](https://github.com/yetone/avante.nvim) - AI-powered code assistant with Copilot integration
 - [**copilot.lua**](https://github.com/zbirenbaum/copilot.lua) - GitHub Copilot support
 - [**blink.cmp**](https://github.com/saghen/blink.cmp) - Fast completion engine with multiple sources
 
@@ -121,17 +120,6 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
 | `gI`          | Go to implementation |
 | `<leader>zig` | Restart LSP          |
 
-### AI (Avante)
-
-| Key          | Description            |
-| ------------ | ---------------------- |
-| `<leader>aa` | Ask Avante             |
-| `<leader>ac` | Chat with Avante       |
-| `<leader>ae` | Edit with Avante       |
-| `<leader>at` | Toggle Avante          |
-| `<leader>am` | Select Avante model    |
-| `<leader>ap` | Switch Avante provider |
-
 ### Editing
 
 | Key                  | Description                          |
@@ -205,13 +193,10 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
 │   │   ├── lazy.lua         # Lazy.nvim setup and plugin specs
 │   │   └── options.lua      # Neovim options
 │   └── plugins/
-│       ├── ai.lua           # Avante & Copilot configuration
-│       ├── cmp.lua          # Blink.cmp completion setup
 │       ├── colors.lua       # Colorscheme configurations
 │       ├── conform.lua      # Formatter configuration
 │       ├── harpoon.lua      # Harpoon file navigation
 │       ├── lsp.lua          # LSP server configurations
-│       ├── markdown.lua     # Markdown preview & rendering
 │       ├── mason.lua        # Mason package manager config
 │       ├── snacks.lua       # Snacks.nvim configuration
 │       └── treesitter.lua   # Treesitter configuration

@@ -1,10 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
-    -- LazyVim config for treesitter
-    indent = { enable = true }, ---@type lazyvim.TSFeat
-    highlight = { enable = true }, ---@type lazyvim.TSFeat
-    folds = { enable = true }, ---@type lazyvim.TSFeat
     ensure_installed = {
       "bash",
       "dockerfile",
@@ -41,10 +37,5 @@ return {
       "xml",
       "yaml",
     },
-  },
-  {
-    "windwp/nvim-ts-autotag",
-    event = "LazyFile",
-    opts = {},
   },
 }
