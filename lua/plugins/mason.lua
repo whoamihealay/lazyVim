@@ -13,8 +13,6 @@ return {
         "golangci-lint",
         "gofumpt",
         "gomodifytags",
-        "markdownlint-cli2",
-        "markdown-toc",
         "prettier",
         "tflint",
         "stylua",

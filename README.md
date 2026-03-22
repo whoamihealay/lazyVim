@@ -165,7 +165,7 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
 2. **Clone this repository**:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/nvim ~/.config/nvim
+   git clone https://github.com/whoamihealay/lazyVim ~/.config/nvim
    ```
 
 3. **Start Neovim**:
@@ -177,6 +177,7 @@ A personal Neovim configuration built on top of [LazyVim](https://github.com/Laz
    Lazy.nvim will automatically bootstrap and install all plugins on first launch.
 
 4. **Authenticate Copilot** (optional):
+
    ```vim
    :Copilot auth
    ```
