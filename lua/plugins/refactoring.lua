@@ -1,7 +1,9 @@
 return {
-  "ThePrimeagen/refactoring.nvim",
-  dependencies = {
-    "lewis6991/async.nvim",
+  {
+    "ThePrimeagen/refactoring.nvim",
+    dependencies = {
+      "lewis6991/async.nvim",
+    },
   },
-  lazy = false,
+  { "lewis6991/async.nvim", lazy = true },
 }
